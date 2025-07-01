@@ -1,25 +1,30 @@
-import controllers 
+package controllers
 
-import (
+import(
 
 )
 
-func AddToCart() gin.HandlerFunc{
+var (
+	ErrCantFindProduct = errors.New("can't find the product")
+	ErrCantDecodeProducts = errors.New("cant find the product")
+	ErrUserIDIsNotValid = errors.New("this user is not valid")
+	ErrCantUpdateUser = errors.New("can't remove this item from the cart")
+	ErrCantGetItem = errors.New("was unable to get the item from the cart")
+	ErrCantBuyCartItem = errors.New("can't update the purchase")
+)
+
+func AddProductToCart(){
 
 }
 
-func RemoveItem() gin.HandlerFunc{
-
-}
-
-func GetItemFromCart() gin.HandlerFunc{
-
-}
-
-func BuyFromCart() gin.HandlerFunc{
+func RemoveCartItem(){
 	
 }
 
-func InstantBuy() gin.HandlerFunc{
+func BuyItemFromCart(){
+	
+}
+
+func InstantBuyer(){
 	
 }
